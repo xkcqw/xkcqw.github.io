@@ -1,1 +1,996 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta name="applicable-device" content="pc,mobile">
 
+<title>传奇私服发布网_新开传奇SF开服表_今日新开传奇网站推荐</title>
+<meta name="description" content="传奇发布网是专注传奇私服的发布平台，每日实时更新新开传奇SF开服表，覆盖1.76复古、1.85合击、单职业超变、微变中变等热门版本。提供开服时间查询、版本评测、传奇攻略与玩家交流社区，找传奇版本就上传奇发布网。">
+<meta name="keywords" content="传奇私服,传奇发布网,新开传奇SF,传奇开服表,今日新开传奇,1.76复古传奇,1.85合击传奇,单职业传奇,超变传奇,热血传奇私服">
+<meta name="author" content="传奇发布网">
+<meta name="robots" content="index,follow">
+<meta name="copyright" content="传奇发布网">
+<link rel="canonical" href="https://www.example.com/">
+
+<style>
+:root{
+    --bg:#080f1c;
+    --bg-2:#0d1830;
+    --card:rgba(255,255,255,.045);
+    --card-hover:rgba(255,255,255,.075);
+    --line:rgba(94,234,212,.16);
+    --text:#e6eef8;
+    --muted:#8fa3bf;
+    --cyan:#22d3ee;
+    --blue:#3b82f6;
+    --gold:#fbbf24;
+    --green:#34d399;
+    --red:#fb7185;
+    --violet:#a78bfa;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+    font-family:"Microsoft YaHei","PingFang SC","Segoe UI",sans-serif;
+    background:var(--bg);
+    background-image:
+        radial-gradient(900px 500px at 12% -8%, rgba(34,211,238,.13), transparent 60%),
+        radial-gradient(800px 480px at 88% 4%, rgba(59,130,246,.16), transparent 62%),
+        radial-gradient(900px 600px at 50% 110%, rgba(167,139,250,.10), transparent 65%);
+    background-attachment:fixed;
+    color:var(--text);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+}
+a{color:var(--cyan);text-decoration:none;transition:color .25s;}
+a:hover{color:var(--gold);}
+img{max-width:100%;display:block;}
+ul{list-style:none;}
+.container{width:1220px;max-width:100%;margin:0 auto;padding:0 18px;}
+::selection{background:rgba(34,211,238,.35);color:#fff;}
+
+/* ============ 顶部导航 ============ */
+.site-header{
+    position:sticky;top:0;z-index:999;
+    background:rgba(8,15,28,.82);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border-bottom:1px solid rgba(94,234,212,.14);
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+}
+.header-inner{display:flex;align-items:center;gap:26px;height:70px;}
+.logo{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.logo-mark{
+    width:38px;height:38px;border-radius:11px;
+    display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,#22d3ee,#3b82f6);
+    color:#05121f;font-weight:900;font-size:19px;
+    box-shadow:0 0 22px rgba(34,211,238,.45);
+}
+.logo-text{font-size:21px;font-weight:800;color:#fff;letter-spacing:.5px;}
+.logo-text em{font-style:normal;color:var(--cyan);}
+
+.nav{display:flex;gap:4px;flex:1;overflow-x:auto;scrollbar-width:none;}
+.nav::-webkit-scrollbar{display:none;}
+.nav a{
+    color:#c8d6e8;font-size:15px;font-weight:600;
+    padding:8px 14px;border-radius:9px;white-space:nowrap;
+    transition:.25s;
+}
+.nav a:hover{color:#fff;background:rgba(255,255,255,.07);}
+.nav a.active{
+    color:#05121f;
+    background:linear-gradient(135deg,#22d3ee,#3b82f6);
+    box-shadow:0 0 18px rgba(34,211,238,.4);
+}
+.header-right{display:flex;align-items:center;gap:14px;flex-shrink:0;}
+.date-box{
+    display:flex;align-items:center;gap:8px;
+    font-size:13px;color:var(--muted);
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    padding:7px 14px;border-radius:999px;
+}
+.dot{
+    width:7px;height:7px;border-radius:50%;background:var(--green);
+    box-shadow:0 0 0 0 rgba(52,211,153,.6);
+    animation:pulse 2s infinite;
+}
+@keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(52,211,153,.6);}
+    70%{box-shadow:0 0 0 9px rgba(52,211,153,0);}
+    100%{box-shadow:0 0 0 0 rgba(52,211,153,0);}
+}
+
+/* ============ 按钮 ============ */
+.btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:7px;
+    padding:12px 26px;border-radius:999px;border:none;cursor:pointer;
+    font-size:15px;font-weight:800;letter-spacing:.5px;
+    background:linear-gradient(135deg,#22d3ee,#3b82f6);
+    color:#05121f;
+    box-shadow:0 8px 22px rgba(34,211,238,.28);
+    transition:transform .25s,box-shadow .25s,filter .25s;
+}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(34,211,238,.42);color:#05121f;}
+.btn.ghost{
+    background:transparent;color:var(--text);
+    border:1px solid rgba(94,234,212,.4);
+    box-shadow:none;
+}
+.btn.ghost:hover{background:rgba(94,234,212,.1);color:#fff;border-color:var(--cyan);}
+.btn.small{padding:8px 18px;font-size:13px;}
+.btn.gold{
+    background:linear-gradient(135deg,#fbbf24,#f59e0b);
+    color:#241703;
+    box-shadow:0 8px 22px rgba(251,191,36,.28);
+}
+.btn.gold:hover{box-shadow:0 14px 30px rgba(251,191,36,.42);color:#241703;}
+
+/* ============ 滚动快讯 ============ */
+.ticker{
+    background:linear-gradient(90deg,rgba(34,211,238,.14),rgba(59,130,246,.1));
+    border-bottom:1px solid rgba(94,234,212,.14);
+}
+.ticker-inner{display:flex;align-items:center;gap:14px;height:44px;overflow:hidden;}
+.ticker-label{
+    flex-shrink:0;font-size:12px;font-weight:800;letter-spacing:1px;
+    color:#05121f;background:var(--cyan);
+    padding:3px 12px;border-radius:6px;
+}
+.ticker-track{overflow:hidden;flex:1;}
+.ticker-move{
+    display:inline-flex;gap:52px;white-space:nowrap;
+    animation:marquee 34s linear infinite;
+}
+.ticker-move span{font-size:13.5px;color:#b9cbe0;}
+.ticker-move span b{color:var(--gold);font-weight:700;}
+.ticker:hover .ticker-move{animation-play-state:paused;}
+@keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+/* ============ 英雄区 ============ */
+.hero{
+    display:grid;grid-template-columns:1.15fr .85fr;gap:34px;
+    align-items:center;
+    padding:56px 0 44px;
+}
+.eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:13px;font-weight:700;letter-spacing:1.5px;
+    color:var(--cyan);
+    background:rgba(34,211,238,.1);
+    border:1px solid rgba(34,211,238,.3);
+    padding:6px 16px;border-radius:999px;
+    margin-bottom:20px;
+}
+.hero h1{
+    font-size:44px;line-height:1.28;font-weight:900;
+    letter-spacing:.5px;margin-bottom:18px;
+    color:#fff;
+}
+.hero h1 em{
+    font-style:normal;
+    background:linear-gradient(120deg,#22d3ee,#60a5fa 50%,#a78bfa);
+    -webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+.hero p{font-size:16px;color:var(--muted);max-width:560px;margin-bottom:28px;}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:26px;}
+.hero-tags{display:flex;flex-wrap:wrap;gap:9px;}
+.chip{
+    font-size:12.5px;color:#a9bcd4;
+    padding:5px 14px;border-radius:999px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.09);
+    transition:.25s;
+}
+.chip:hover{color:#fff;border-color:rgba(34,211,238,.5);background:rgba(34,211,238,.12);}
+
+/* 数据面板 */
+.hero-panel{
+    background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.02));
+    border:1px solid rgba(94,234,212,.2);
+    border-radius:20px;
+    padding:26px;
+    box-shadow:0 24px 60px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.08);
+    position:relative;overflow:hidden;
+}
+.hero-panel::before{
+    content:'';position:absolute;top:-60px;right:-60px;
+    width:180px;height:180px;border-radius:50%;
+    background:radial-gradient(circle,rgba(34,211,238,.35),transparent 70%);
+}
+.panel-title{
+    font-size:14px;font-weight:800;color:#cfe0f2;
+    letter-spacing:1px;margin-bottom:18px;
+    display:flex;align-items:center;gap:9px;
+}
+.panel-title::before{
+    content:'';width:4px;height:16px;border-radius:2px;
+    background:linear-gradient(#22d3ee,#3b82f6);
+}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;position:relative;}
+.stat{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.07);
+    border-radius:13px;padding:16px 15px;
+}
+.stat b{
+    display:block;font-size:26px;font-weight:900;
+    color:var(--cyan);line-height:1.2;
+    font-family:"DIN Alternate","Segoe UI",sans-serif;
+}
+.stat b.gold{color:var(--gold);}
+.stat b.violet{color:var(--violet);}
+.stat b.green{color:var(--green);}
+.stat span{font-size:12.5px;color:var(--muted);}
+.panel-foot{
+    margin-top:18px;padding-top:16px;
+    border-top:1px dashed rgba(255,255,255,.1);
+    font-size:12.5px;color:var(--muted);
+    display:flex;justify-content:space-between;align-items:center;
+}
+
+/* ============ 通用区块 ============ */
+.section{padding:22px 0 12px;}
+.section-head{
+    display:flex;align-items:flex-end;justify-content:space-between;
+    gap:16px;flex-wrap:wrap;
+    margin-bottom:24px;
+}
+.section-head h2{
+    font-size:26px;font-weight:900;color:#fff;
+    display:flex;align-items:center;gap:12px;letter-spacing:.5px;
+}
+.section-head h2::before{
+    content:'';width:5px;height:24px;border-radius:3px;
+    background:linear-gradient(180deg,#22d3ee,#3b82f6);
+    box-shadow:0 0 14px rgba(34,211,238,.6);
+}
+.section-head .sub{font-size:13px;color:var(--muted);}
+.section-head .more{font-size:13.5px;font-weight:700;color:var(--cyan);}
+
+/* 筛选栏 */
+.filters{
+    display:flex;flex-wrap:wrap;gap:10px;
+    margin-bottom:20px;
+    padding:14px 16px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:14px;
+}
+.filter{
+    font-size:13.5px;font-weight:700;color:#a9bcd4;
+    padding:7px 18px;border-radius:999px;cursor:pointer;
+    border:1px solid rgba(255,255,255,.09);
+    background:rgba(255,255,255,.03);
+    transition:.22s;
+}
+.filter:hover{color:#fff;border-color:rgba(34,211,238,.45);}
+.filter.on{
+    color:#05121f;
+    background:linear-gradient(135deg,#22d3ee,#3b82f6);
+    border-color:transparent;
+    box-shadow:0 0 16px rgba(34,211,238,.35);
+}
+
+/* ============ 开服表 ============ */
+.server-list{
+    display:flex;flex-direction:column;gap:12px;
+}
+.server-row{
+    display:grid;
+    grid-template-columns:1fr 130px 108px 118px;
+    align-items:center;gap:18px;
+    padding:16px 20px;
+    background:var(--card);
+    border:1px solid rgba(255,255,255,.07);
+    border-radius:14px;
+    transition:.28s;
+    position:relative;overflow:hidden;
+}
+.server-row::before{
+    content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+    background:linear-gradient(180deg,#22d3ee,#3b82f6);
+    opacity:0;transition:.28s;
+}
+.server-row:hover{
+    background:var(--card-hover);
+    border-color:rgba(34,211,238,.35);
+    transform:translateX(4px);
+    box-shadow:0 14px 34px rgba(0,0,0,.4);
+}
+.server-row:hover::before{opacity:1;}
+.sr-name{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.sr-name h3{font-size:16.5px;font-weight:800;color:#fff;}
+.sr-name .ver{font-size:13px;color:var(--cyan);font-weight:700;}
+.sr-meta{
+    margin-top:6px;font-size:12.5px;color:var(--muted);
+    display:flex;flex-wrap:wrap;gap:14px;
+}
+.sr-meta i{font-style:normal;color:#c3d5e8;font-weight:600;}
+.sr-time{font-size:15px;font-weight:800;color:var(--gold);}
+.sr-time small{display:block;font-size:11.5px;color:var(--muted);font-weight:400;}
+.status{
+    display:inline-block;font-size:12px;font-weight:800;
+    padding:4px 13px;border-radius:999px;
+}
+.status.open{color:#04251a;background:var(--green);}
+.status.wait{color:#241703;background:var(--gold);}
+.status.pre{color:#1a0b16;background:var(--red);}
+.badge{
+    font-size:11px;font-weight:800;
+    padding:2px 9px;border-radius:6px;
+    background:rgba(251,191,36,.15);
+    color:var(--gold);
+    border:1px solid rgba(251,191,36,.35);
+}
+.badge.hot{background:rgba(251,113,133,.15);color:var(--red);border-color:rgba(251,113,133,.35);}
+
+/* ============ 版本卡片 ============ */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(270px,1fr));
+    gap:18px;
+}
+.card{
+    background:var(--card);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:16px;
+    padding:22px;
+    transition:.3s;
+    position:relative;overflow:hidden;
+}
+.card::after{
+    content:'';position:absolute;inset:0;
+    background:radial-gradient(400px 200px at 100% 0,rgba(34,211,238,.14),transparent 70%);
+    opacity:0;transition:.3s;pointer-events:none;
+}
+.card:hover{
+    transform:translateY(-8px);
+    border-color:rgba(34,211,238,.4);
+    box-shadow:0 22px 46px rgba(0,0,0,.5);
+}
+.card:hover::after{opacity:1;}
+.card .ico{
+    width:46px;height:46px;border-radius:13px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:21px;font-weight:900;
+    background:linear-gradient(135deg,rgba(34,211,238,.22),rgba(59,130,246,.22));
+    border:1px solid rgba(34,211,238,.3);
+    color:var(--cyan);
+    margin-bottom:15px;
+}
+.card h3{font-size:18px;font-weight:800;color:#fff;margin-bottom:8px;}
+.card p{font-size:13.5px;color:var(--muted);margin-bottom:16px;min-height:44px;}
+.card .kv{font-size:13px;color:#a9bcd4;margin-bottom:7px;}
+.card .kv strong{color:#dbe9f8;font-weight:700;margin-right:4px;}
+.card .card-foot{
+    margin-top:16px;padding-top:14px;
+    border-top:1px dashed rgba(255,255,255,.09);
+    display:flex;justify-content:space-between;align-items:center;
+    font-size:13px;
+}
+.card .card-foot .num{color:var(--gold);font-weight:800;}
+
+/* ============ 攻略列表 ============ */
+.guide-grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
+    gap:18px;
+}
+.guide{
+    display:flex;gap:16px;
+    padding:18px;
+    background:var(--card);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;
+    transition:.28s;
+}
+.guide:hover{
+    background:var(--card-hover);
+    border-color:rgba(34,211,238,.35);
+    transform:translateY(-4px);
+}
+.guide .thumb{
+    width:74px;height:74px;flex-shrink:0;border-radius:12px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:26px;
+    background:linear-gradient(135deg,rgba(34,211,238,.16),rgba(167,139,250,.16));
+    border:1px solid rgba(255,255,255,.1);
+}
+.guide h3{font-size:15.5px;font-weight:800;color:#fff;margin-bottom:7px;line-height:1.5;}
+.guide:hover h3{color:var(--cyan);}
+.guide p{font-size:13px;color:var(--muted);margin-bottom:8px;}
+.guide .gmeta{font-size:12px;color:#7b90ab;display:flex;gap:14px;}
+
+/* ============ FAQ ============ */
+.faq-wrap{display:flex;flex-direction:column;gap:12px;}
+details{
+    background:var(--card);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:13px;
+    padding:16px 20px;
+    transition:.25s;
+}
+details[open]{
+    border-color:rgba(34,211,238,.38);
+    background:rgba(34,211,238,.055);
+}
+details summary{
+    cursor:pointer;list-style:none;
+    font-size:15.5px;font-weight:800;color:#e8f1fb;
+    display:flex;align-items:center;justify-content:space-between;gap:14px;
+}
+details summary::-webkit-details-marker{display:none;}
+details summary::after{
+    content:'+';font-size:20px;font-weight:400;color:var(--cyan);
+    transition:transform .25s;flex-shrink:0;
+}
+details[open] summary::after{content:'−';}
+details p{
+    margin-top:12px;font-size:13.8px;color:var(--muted);
+    padding-top:12px;border-top:1px dashed rgba(255,255,255,.1);
+}
+
+/* ============ 页脚 ============ */
+.site-footer{
+    margin-top:56px;
+    background:linear-gradient(180deg,rgba(13,24,48,.5),rgba(8,15,28,.95));
+    border-top:1px solid rgba(94,234,212,.14);
+    padding:48px 0 24px;
+}
+.footer-grid{
+    display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;
+    gap:34px;margin-bottom:34px;
+}
+.footer-col h4{
+    font-size:16px;font-weight:800;color:#fff;
+    margin-bottom:18px;position:relative;padding-bottom:11px;
+}
+.footer-col h4::after{
+    content:'';position:absolute;left:0;bottom:0;
+    width:38px;height:3px;border-radius:2px;
+    background:linear-gradient(90deg,#22d3ee,#3b82f6);
+}
+.footer-col p{font-size:13.5px;color:var(--muted);line-height:1.9;}
+.footer-col li{margin-bottom:11px;font-size:13.5px;color:var(--muted);}
+.footer-col li a{color:var(--muted);}
+.footer-col li a:hover{color:var(--cyan);}
+.footer-tags{display:flex;flex-wrap:wrap;gap:9px;}
+.footer-tags span{
+    font-size:12.5px;color:#a9bcd4;
+    padding:5px 13px;border-radius:999px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    transition:.25s;
+}
+.footer-tags span:hover{color:var(--cyan);border-color:rgba(34,211,238,.45);}
+.copyright{
+    border-top:1px solid rgba(255,255,255,.08);
+    padding-top:22px;text-align:center;
+    font-size:13px;color:#7b90ab;line-height:2;
+}
+
+/* ============ 响应式 ============ */
+@media (max-width:1024px){
+    .hero{grid-template-columns:1fr;gap:28px;padding:40px 0 30px;}
+    .hero h1{font-size:34px;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+    .header-inner{gap:16px;}
+    .date-box{display:none;}
+}
+@media (max-width:768px){
+    .header-inner{height:auto;padding:12px 0;flex-wrap:wrap;}
+    .nav{order:3;width:100%;flex:0 0 100%;}
+    .hero h1{font-size:27px;}
+    .hero p{font-size:14.5px;}
+    .section-head h2{font-size:21px;}
+    .server-row{
+        grid-template-columns:1fr;gap:10px;
+        padding:15px 16px;
+    }
+    .sr-time{font-size:14px;}
+    .sr-time small{display:inline;margin-left:6px;}
+    .server-row .btn{width:100%;}
+    .footer-grid{grid-template-columns:1fr;gap:26px;}
+    .stat-grid{gap:10px;}
+    .stat b{font-size:22px;}
+    .guide-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= 头部 ================= -->
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="logo" href="/">
+            <span class="logo-mark">传</span>
+            <span class="logo-text">传奇<em>发布网</em></span>
+        </a>
+
+        <nav class="nav" aria-label="主导航">
+            <a href="/" class="active">首页</a>
+            <a href="#servers">今日开服</a>
+            <a href="#versions">版本专区</a>
+            <a href="#guides">攻略中心</a>
+            <a href="#faq">常见问题</a>
+            <a href="#">玩家社区</a>
+            <a href="#">开服入驻</a>
+        </nav>
+
+        <div class="header-right">
+            <div class="date-box"><span class="dot"></span>2026年11月6日 星期五</div>
+            <a href="#servers" class="btn small">开服表</a>
+        </div>
+    </div>
+</header>
+
+<!-- ================= 滚动快讯 ================= -->
+<div class="ticker">
+    <div class="container ticker-inner">
+        <span class="ticker-label">开服快讯</span>
+        <div class="ticker-track">
+            <div class="ticker-move">
+                <span><b>17:00</b> 龙魂传奇 · 1.85合击首区 已开区</span>
+                <span><b>19:30</b> 复古传奇 · 1.76精品 即将开启</span>
+                <span><b>20:30</b> 星耀传奇 · 1.95中变 预约中</span>
+                <span><b>公告</b> 新版本"龙魂觉醒"12月25日开启预约</span>
+                <span><b>21:00</b> 赤月传说 · 1.80战神终极 即将开启</span>
+                <span><b>17:00</b> 龙魂传奇 · 1.85合击首区 已开区</span>
+                <span><b>19:30</b> 复古传奇 · 1.76精品 即将开启</span>
+                <span><b>20:30</b> 星耀传奇 · 1.95中变 预约中</span>
+                <span><b>公告</b> 新版本"龙魂觉醒"12月25日开启预约</span>
+                <span><b>21:00</b> 赤月传说 · 1.80战神终极 即将开启</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="container">
+
+    <!-- ================= 英雄区 ================= -->
+    <section class="hero">
+        <div class="hero-left">
+            <span class="eyebrow">实时开服 · 每日更新 · 数据透明</span>
+            <h1>今日新开传奇私服<br><em>开服表实时更新</em></h1>
+            <p>传奇发布网专注传奇私服资讯服务，每日同步更新新开传奇SF开服时间、版本评测与玩法攻略，覆盖 1.76 复古、1.85 合击、单职业超变、微变中变等全系版本，帮你在第一时间找到想玩的区服。</p>
+            <div class="hero-actions">
+                <a href="#servers" class="btn">查看今日全部开服</a>
+                <a href="#versions" class="btn ghost">了解热门版本</a>
+            </div>
+            <div class="hero-tags">
+                <a href="#" class="chip">1.76复古</a>
+                <a href="#" class="chip">1.85合击</a>
+                <a href="#" class="chip">单职业超变</a>
+                <a href="#" class="chip">微变中变</a>
+                <a href="#" class="chip">无英雄</a>
+                <a href="#" class="chip">沙城争霸</a>
+            </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="平台数据概览">
+            <div class="panel-title">平台实时数据</div>
+            <div class="stat-grid">
+                <div class="stat"><b>48</b><span>今日新开区服</span></div>
+                <div class="stat"><b class="gold">126</b><span>在架传奇版本</span></div>
+                <div class="stat"><b class="green">6.8万</b><span>今日在线玩家</span></div>
+                <div class="stat"><b class="violet">2.4万</b><span>累计收录开服</span></div>
+            </div>
+            <div class="panel-foot">
+                <span>数据更新：2026-11-06 16:55</span>
+                <span style="color:var(--green);font-weight:700;">● 实时同步中</span>
+            </div>
+        </aside>
+    </section>
+
+    <!-- ================= 今日开服表 ================= -->
+    <section class="section" id="servers">
+        <div class="section-head">
+            <h2>今日新开传奇私服开服表</h2>
+            <div class="sub">共 48 组区服 · 数据更新时间 2026-11-06 16:55:24</div>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="版本筛选">
+            <span class="filter on">全部版本</span>
+            <span class="filter">1.76 复古</span>
+            <span class="filter">1.85 合击</span>
+            <span class="filter">1.80 战神</span>
+            <span class="filter">单职业超变</span>
+            <span class="filter">微变 / 中变</span>
+            <span class="filter">无英雄</span>
+        </div>
+
+        <div class="server-list">
+
+            <article class="server-row">
+                <div>
+                    <div class="sr-name">
+                        <h3>龙魂传奇</h3>
+                        <span class="ver">1.85 龙魂合击</span>
+                        <span class="badge hot">首区</span>
+                        <span class="badge">人气火爆</span>
+                    </div>
+                    <div class="sr-meta">
+                        <span>区服：<i>龙魂一区</i></span>
+                        <span>线路：<i>双线</i></span>
+                        <span>版本：<i>特色合击</i></span>
+                    </div>
+                </div>
+                <div class="sr-time">今日 17:00<small>已开区 30 分钟</small></div>
+                <div><span class="status open">已开区</span></div>
+                <div><a href="#" class="btn small">进入游戏</a></div>
+            </article>
+
+            <article class="server-row">
+                <div>
+                    <div class="sr-name">
+                        <h3>复古传奇</h3>
+                        <span class="ver">1.76 复古精品</span>
+                        <span class="badge">小极品</span>
+                        <span class="badge">无英雄</span>
+                    </div>
+                    <div class="sr-meta">
+                        <span>区服：<i>复古二区</i></span>
+                        <span>线路：<i>电信</i></span>
+                        <span>版本：<i>经典还原</i></span>
+                    </div>
+                </div>
+                <div class="sr-time">今日 19:30<small>距开区 2 小时</small></div>
+                <div><span class="status wait">即将开启</span></div>
+                <div><a href="#" class="btn small gold">预约提醒</a></div>
+            </article>
+
+            <article class="server-row">
+                <div>
+                    <div class="sr-name">
+                        <h3>暴风传奇</h3>
+                        <span class="ver">单职业超变</span>
+                        <span class="badge">刀刀光柱</span>
+                        <span class="badge">高爆率</span>
+                    </div>
+                    <div class="sr-meta">
+                        <span>区服：<i>暴风三区</i></span>
+                        <span>线路：<i>多线</i></span>
+                        <span>版本：<i>无限刀</i></span>
+                    </div>
+                </div>
+                <div class="sr-time">今日 14:00<small>已开区 3 小时</small></div>
+                <div><span class="status open">已开区</span></div>
+                <div><a href="#" class="btn small">进入游戏</a></div>
+            </article>
+
+            <article class="server-row">
+                <div>
+                    <div class="sr-name">
+                        <h3>战神传奇</h3>
+                        <span class="ver">1.80 三职业微变</span>
+                        <span class="badge">装备保值</span>
+                        <span class="badge">沙城奖励</span>
+                    </div>
+                    <div class="sr-meta">
+                        <span>区服：<i>战神四区</i></span>
+                        <span>线路：<i>双线</i></span>
+                        <span>版本：<i>微变</i></span>
+                    </div>
+                </div>
+                <div class="sr-time">今日 10:00<small>已开区 7 小时</small></div>
+                <div><span class="status open">已开区</span></div>
+                <div><a href="#" class="btn small">进入游戏</a></div>
+            </article>
+
+            <article class="server-row">
+                <div>
+                    <div class="sr-name">
+                        <h3>星耀传奇</h3>
+                        <span class="ver">1.95 中变合击</span>
+                        <span class="badge">三线互通</span>
+                    </div>
+                    <div class="sr-meta">
+                        <span>区服：<i>星耀一区</i></span>
+                        <span>线路：<i>三线</i></span>
+                        <span>版本：<i>中变</i></span>
+                    </div>
+                </div>
+                <div class="sr-time">今日 20:30<small>距开区 3.5 小时</small></div>
+                <div><span class="status wait">即将开启</span></div>
+                <div><a href="#" class="btn small gold">预约提醒</a></div>
+            </article>
+
+            <article class="server-row">
+                <div>
+                    <div class="sr-name">
+                        <h3>赤月传说</h3>
+                        <span class="ver">1.80 战神终极</span>
+                        <span class="badge">散人友好</span>
+                    </div>
+                    <div class="sr-meta">
+                        <span>区服：<i>赤月一区</i></span>
+                        <span>线路：<i>双线</i></span>
+                        <span>版本：<i>微变</i></span>
+                    </div>
+                </div>
+                <div class="sr-time">今日 21:00<small>距开区 4 小时</small></div>
+                <div><span class="status pre">预约中</span></div>
+                <div><a href="#" class="btn small gold">预约提醒</a></div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ================= 版本专区 ================= -->
+    <section class="section" id="versions">
+        <div class="section-head">
+            <h2>热门传奇版本专区</h2>
+            <a href="#" class="more">查看全部版本 ›</a>
+        </div>
+
+        <div class="cards">
+
+            <article class="card">
+                <div class="ico">76</div>
+                <h3>1.76 复古传奇</h3>
+                <p>经典三职业还原，无英雄、无合击、无内功，装备全靠打，适合情怀玩家长期蹲守。</p>
+                <div class="kv"><strong>核心玩法：</strong>打宝 / 爆装 / 沙城</div>
+                <div class="kv"><strong>上手难度：</strong>中等</div>
+                <div class="card-foot">
+                    <span class="num">在架 32 组</span>
+                    <a href="#">进入专区 ›</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="ico">85</div>
+                <h3>1.85 英雄合击</h3>
+                <p>英雄系统搭配合击技能，攻沙节奏爽快，装备成长曲线平滑，组队体验极佳。</p>
+                <div class="kv"><strong>核心玩法：</strong>英雄养成 / 合击</div>
+                <div class="kv"><strong>上手难度：</strong>较低</div>
+                <div class="card-foot">
+                    <span class="num">在架 41 组</span>
+                    <a href="#">进入专区 ›</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="ico">单</div>
+                <h3>单职业超变</h3>
+                <p>全服单职业，一刀999、刀刀光柱，爆率高回收快，适合喜欢快节奏爽感的玩家。</p>
+                <div class="kv"><strong>核心玩法：</strong>无限刀 / 光柱爆装</div>
+                <div class="kv"><strong>上手难度：</strong>低</div>
+                <div class="card-foot">
+                    <span class="num">在架 28 组</span>
+                    <a href="#">进入专区 ›</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="ico">变</div>
+                <h3>微变 / 中变</h3>
+                <p>介于复古与超变之间，装备保值度好、成长周期适中，是目前开服量最大的版本类型。</p>
+                <div class="kv"><strong>核心玩法：</strong>装备保值 / 长期服</div>
+                <div class="kv"><strong>上手难度：</strong>中等</div>
+                <div class="card-foot">
+                    <span class="num">在架 25 组</span>
+                    <a href="#">进入专区 ›</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ================= 攻略中心 ================= -->
+    <section class="section" id="guides">
+        <div class="section-head">
+            <h2>传奇攻略与版本评测</h2>
+            <a href="#" class="more">更多攻略 ›</a>
+        </div>
+
+        <div class="guide-grid">
+
+            <article class="guide">
+                <div class="thumb">📘</div>
+                <div>
+                    <h3><a href="#">1.76 复古怎么玩？新手三天成型路线图</a></h3>
+                    <p>从选职业到打宝地图，一套适合散人的低成本成长思路。</p>
+                    <div class="gmeta"><span>2026-11-06</span><span>攻略中心</span></div>
+                </div>
+            </article>
+
+            <article class="guide">
+                <div class="thumb">⚔️</div>
+                <div>
+                    <h3><a href="#">合击版本英雄搭配与技能连招详解</a></h3>
+                    <p>战战、道道、法战三大主流搭配的优缺点与实战用法。</p>
+                    <div class="gmeta"><span>2026-11-06</span><span>版本评测</span></div>
+                </div>
+            </article>
+
+            <article class="guide">
+                <div class="thumb">🛡️</div>
+                <div>
+                    <h3><a href="#">选服避坑指南：这 5 个细节决定体验</a></h3>
+                    <p>看开区频率、看线路数量、看老区留存，三分钟判断区服质量。</p>
+                    <div class="gmeta"><span>2026-11-05</span><span>新手指南</span></div>
+                </div>
+            </article>
+
+            <article class="guide">
+                <div class="thumb">💎</div>
+                <div>
+                    <h3><a href="#">单职业超变版本的装备回收机制解析</a></h3>
+                    <p>回收比例、爆率倍率与货币体系，看懂这些才知道值不值得玩。</p>
+                    <div class="gmeta"><span>2026-11-05</span><span>玩法解析</span></div>
+                </div>
+            </article>
+
+            <article class="guide">
+                <div class="thumb">🏰</div>
+                <div>
+                    <h3><a href="#">沙城争霸怎么打？行会攻城分工手册</a></h3>
+                    <p>从站位、集结到突进节奏，一份可直接照抄的攻城方案。</p>
+                    <div class="gmeta"><span>2026-11-04</span><span>行会玩法</span></div>
+                </div>
+            </article>
+
+            <article class="guide">
+                <div class="thumb">📊</div>
+                <div>
+                    <h3><a href="#">本月开服数据观察：哪些版本在涨？</a></h3>
+                    <p>按开服量、留存、玩家活跃度三个维度做的月度版本趋势报告。</p>
+                    <div class="gmeta"><span>2026-11-04</span><span>数据报告</span></div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section" id="faq">
+        <div class="section-head">
+            <h2>传奇私服常见问题</h2>
+            <div class="sub">新手最关心的 5 个问题</div>
+        </div>
+
+        <div class="faq-wrap">
+            <details open>
+                <summary>传奇私服和官方传奇有什么区别？</summary>
+                <p>官方传奇为官方运营，版本节奏与数值相对固定；传奇私服由不同运营团队搭建，版本玩法更灵活，常见的有 1.76 复古、1.85 合击、单职业超变等类型。玩家在选择时应优先查看开服时间、线路数量与区服口碑，理性体验。</p>
+            </details>
+
+            <details>
+                <summary>怎么判断一个传奇发布网的信息是否靠谱？</summary>
+                <p>主要看三点：一是开服信息是否每日更新且标注准确时间；二是是否提供版本分类与筛选，方便快速定位；三是是否有攻略、评测等原创内容支撑。本站开服数据每日同步更新，并对区服状态（已开区 / 即将开启 / 预约中）做实时标注。</p>
+            </details>
+
+            <details>
+                <summary>1.76 复古和 1.85 合击哪个更适合新手？</summary>
+                <p>如果追求还原老传奇体验、愿意慢慢打宝，1.76 复古更合适；如果希望上手快、组队爽快，1.85 合击的英雄系统与合击技能会更友好。新手建议先从合击或微变版本入手，熟悉节奏后再尝试复古。</p>
+            </details>
+
+            <details>
+                <summary>开服表里的"双线""三线"是什么意思？</summary>
+                <p>指的是区服提供的网络线路数量。双线一般指电信 + 联通，三线会再加入移动或 BGP 线路。线路越多，不同运营商的玩家进入时延迟通常越稳定。选择时可优先考虑标注三线互通或 BGP 机房的区服。</p>
+            </details>
+
+            <details>
+                <summary>单职业超变版本为什么这么受欢迎？</summary>
+                <p>单职业版本省去了职业选择与搭配成本，所有玩家成长路径统一，数值成长快、爆率高、光柱多，短时间内就能获得较强的爽感。适合时间碎片化、想快速体验游戏内容的玩家，但通常不适合追求长期养成的人群。</p>
+            </details>
+        </div>
+    </section>
+
+</main>
+
+<!-- ================= 页脚 ================= -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+
+            <div class="footer-col">
+                <h4>关于传奇发布网</h4>
+                <p>传奇发布网专注传奇私服信息发布与内容服务，每日实时更新新开传奇SF开服表，提供版本分类、开服时间查询、玩法攻略与版本评测，帮助玩家高效找到适合自己的区服。本站开服信息整理自公开渠道，仅供玩家参考交流。</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="/">网站首页</a></li>
+                    <li><a href="#servers">今日开服表</a></li>
+                    <li><a href="#versions">版本专区</a></li>
+                    <li><a href="#guides">攻略中心</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>热门标签</h4>
+                <div class="footer-tags">
+                    <span>新开传奇SF</span>
+                    <span>1.76复古</span>
+                    <span>1.85合击</span>
+                    <span>单职业超变</span>
+                    <span>微变传奇</span>
+                    <span>中变传奇</span>
+                    <span>无英雄传奇</span>
+                    <span>传奇开服表</span>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>联系我们</h4>
+                <ul>
+                    <li>客服 QQ：768650807</li>
+                    <li>邮箱：service@chuanqi.com</li>
+                    <li>玩家交流群：768650807</li>
+                    <li>开服入驻：请发送邮件至上方邮箱</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; 2026 传奇发布网 版权所有 | 本站开服信息整理自网络，如有侵权请联系客服处理</p>
+            <p>温馨提示：适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ================= 结构化数据（利于搜索引擎理解页面） ================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.example.com/#website",
+      "url": "https://www.example.com/",
+      "name": "传奇发布网",
+      "alternateName": "传奇私服发布网",
+      "description": "每日实时更新新开传奇SF开服表，覆盖1.76复古、1.85合击、单职业超变等热门版本。",
+      "inLanguage": "zh-CN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.example.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.example.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "传奇私服和官方传奇有什么区别？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "官方传奇由官方运营，版本节奏与数值相对固定；传奇私服由不同运营团队搭建，版本玩法更灵活，常见的有1.76复古、1.85合击、单职业超变等类型。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "1.76复古和1.85合击哪个更适合新手？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "追求还原老传奇体验、愿意慢慢打宝的玩家适合1.76复古；希望上手快、组队爽快的玩家适合1.85合击。新手建议先从合击或微变版本入手。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "开服表里的双线、三线是什么意思？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "指区服提供的网络线路数量。双线一般指电信+联通，三线会再加入移动或BGP线路，线路越多不同运营商玩家的延迟通常越稳定。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
